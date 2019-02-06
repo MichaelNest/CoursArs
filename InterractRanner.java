@@ -45,8 +45,26 @@ public class InterractRanner {
 				System.out.println("Enter second arg: ");
 				String second = reader.next();
 				calc.add(Double.valueOf(first), Double.valueOf(second));
-				System.out.println("Result: "+calc.getResult());
+				System.out.println("Result add: "+calc.getResult());
 				calc.cleanResult();
+				
+				calc.sub(Double.valueOf(first), Double.valueOf(second));
+				System.out.println("Result sub: "+calc.getResult());
+				calc.cleanResult();
+				
+				calc.mult(Double.valueOf(first), Double.valueOf(second));
+				System.out.println("Result mult: "+calc.getResult());
+				calc.cleanResult();
+				
+				calc.div(Double.valueOf(first), Double.valueOf(second));
+				System.out.println("Result div: "+calc.getResult());
+				calc.cleanResult();
+				
+			    calc.pow(Double.valueOf(first), Double.valueOf(second));
+				System.out.println("Result pow: "+calc.getResult());
+			    calc.cleanResult();
+				
+				
 				System.out.println("Exit: yes/no");
 				exit = reader.next();
 			}
